@@ -1,0 +1,13 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, open sans, sans-serif;
+    background-color: #dfdfdf;
+    font-size: 12pt;
+    color: #636363;
+}
