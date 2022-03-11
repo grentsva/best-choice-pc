@@ -5,7 +5,7 @@ export const FooterWrapper = styled.div`
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 30px;
+  height: 36px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -14,7 +14,7 @@ export const FooterWrapper = styled.div`
 
 export const FooterLinks = styled.a`
   color: #fff;
-  padding: 5px 10px;
+  padding: 10px;
   text-decoration: none;
 
   &:hover {
@@ -25,5 +25,5 @@ export const FooterLinks = styled.a`
 
 export const FooterSign = styled.div`
   flex-basis: 50%;
-  padding: 5px 10px;
+  padding: 10px;
 `;
