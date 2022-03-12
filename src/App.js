@@ -1,15 +1,17 @@
 import { useState, useEffect } from 'react';
 import { AppWrapper } from './AppStyles';
-import ScrollUp from './components/Common/ScrollUp/ScrollUp';
+import Header from './components/Header';
 import Footer from './components/Footer';
+import ScrollUp from './components/Common/ScrollUp/ScrollUp';
 
 const App = () => {
-  const [isScrolled, setScrolled] = useState(false);
+  const [scrollPercent, setScrollPercent] = useState(0);
 
-  const scrollHandler = () =>
-    window.screen.height / 2 < window.scrollY
-      ? setScrolled(true)
-      : setScrolled(false);
+  const scrollHandler = () => {
+    let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    setScrollPercent((windowScroll / height) * 100);
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', scrollHandler);
@@ -18,10 +20,10 @@ const App = () => {
 
   return (
     <AppWrapper>
-      <div>Header</div>
+      <Header scrollPercent={scrollPercent} />
       <div style={{ height: '1800px' }}>Content</div>
       <Footer />
-      <ScrollUp isScrolled={isScrolled} />
+      <ScrollUp scrollPercent={scrollPercent} />
     </AppWrapper>
   );
 };

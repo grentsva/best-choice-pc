@@ -18,12 +18,12 @@ export const FooterLinks = styled.a`
   text-decoration: none;
 
   &:hover {
-    color: #346b21;
+    color: #94d137;
     transition: 200ms ease-in;
   }
 `;
 
 export const FooterSign = styled.div`
-  flex-basis: 50%;
+  flex-basis: 55%;
   padding: 10px;
 `;
