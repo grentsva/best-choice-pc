@@ -1,13 +1,13 @@
 import ProgressBar from '../Common/ProgressBar';
-import { HeaderWrapper, NavBarWrapper } from './HeaderStyles';
+import { HeaderWrapper, HomeLink, NavBarWrapper } from './HeaderStyles';
 
 const Header = ({ scrollPercent }) => {
   return (
     <HeaderWrapper>
       <NavBarWrapper>
-        <div>nav</div>
-        <div>nav</div>
-        <div>nav</div>
+        <HomeLink href='#'>
+          <i className='fas fa-home'></i>
+        </HomeLink>
       </NavBarWrapper>
       <ProgressBar scrollPercent={scrollPercent} />
     </HeaderWrapper>

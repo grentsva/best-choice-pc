@@ -15,7 +15,6 @@ export const FooterWrapper = styled.div`
 export const FooterLinks = styled.a`
   color: #fff;
   padding: 10px;
-  text-decoration: none;
 
   &:hover {
     color: #94d137;

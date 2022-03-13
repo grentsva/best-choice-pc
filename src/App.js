@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import { AppWrapper } from './AppStyles';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import ScrollUp from './components/Common/ScrollUp/ScrollUp';
+import ScrollUp from './components/Common/ScrollUp';
+import Items from './components/Items';
 
 const App = () => {
   const [scrollPercent, setScrollPercent] = useState(0);
@@ -21,7 +22,7 @@ const App = () => {
   return (
     <AppWrapper>
       <Header scrollPercent={scrollPercent} />
-      <div style={{ height: '1800px' }}>Content</div>
+      <Items />
       <Footer />
       <ScrollUp scrollPercent={scrollPercent} />
     </AppWrapper>

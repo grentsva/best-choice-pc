@@ -15,3 +15,13 @@ export const NavBarWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
 `;
+
+export const HomeLink = styled.a`
+  color: #fff;
+  padding: 8px;
+
+  &:hover {
+    color: #94d137;
+    transition: 200ms ease-in;
+  }
+`;

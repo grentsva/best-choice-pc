@@ -8,8 +8,8 @@ export const ScrollUpBtn = styled.button`
   padding: 7px 10px;
   background-color: #346b21;
   border: none;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   color: #fff;
   font-size: 18px;
   text-align: center;

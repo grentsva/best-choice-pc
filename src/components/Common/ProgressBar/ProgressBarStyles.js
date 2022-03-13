@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProgressBarWrapper = styled.div`
-  margin-top: 18px;
+  margin-top: -2px;
   width: 100%;
   height: 8px;
   background: #dfdfdf;
