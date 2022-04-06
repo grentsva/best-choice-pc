@@ -1,4 +1,12 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+}`;
 
 export const ScrollUpBtn = styled.button`
   position: fixed;
@@ -14,16 +22,5 @@ export const ScrollUpBtn = styled.button`
   font-size: 18px;
   text-align: center;
   cursor: pointer;
-  animation-duration: 1.5s;
-  animation-fill-mode: both;
-  animation-name: fadeIn;
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+  animation: ${fadeIn} 1.5s;
 `;

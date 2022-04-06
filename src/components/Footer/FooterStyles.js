@@ -2,10 +2,6 @@ import styled from 'styled-components';
 
 export const FooterWrapper = styled.div`
   background-color: #181818;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 36px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -24,5 +20,9 @@ export const FooterLinks = styled.a`
 
 export const FooterSign = styled.div`
   flex-basis: 55%;
-  padding: 10px;
+  padding: 10px 0;
+
+  @media (max-width: 425px) {
+    flex-basis: 85%;
+  }
 `;
