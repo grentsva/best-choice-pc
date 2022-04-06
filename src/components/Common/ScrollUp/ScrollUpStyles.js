@@ -14,9 +14,16 @@ export const ScrollUpBtn = styled.button`
   font-size: 18px;
   text-align: center;
   cursor: pointer;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
 
-  &:hover {
-    opacity: 0.75;
-    transition: 1s;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 `;
